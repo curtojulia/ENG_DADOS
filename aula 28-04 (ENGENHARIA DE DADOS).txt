@@ -25,7 +25,7 @@ exemplo:
 codDepto int , -- primeiro cria a tabela que vc tem na outra tabela 
 foreign key(codDepto) references departamento (codDept) -- agora você cria a chave estrangeira
 
-PROVA
+PROVA (aula1)
 EXEMPLO:
 CREATE TABLE matricula(
 matricula integer,
