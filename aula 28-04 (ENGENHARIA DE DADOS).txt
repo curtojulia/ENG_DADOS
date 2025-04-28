@@ -1,0 +1,41 @@
+aula 28-04 (ENGENHARIA DE DADOS)
+
+SQL
+
+notepad++ (portable zip) - serve para digitar os comandos nele, autocompleta código, ...
+postgre - banco de dados usado em PI
+workbench - ide boa do mysql
+
+linguagem ddl (parte da sql que traz três comandos: create, alter, drop)
+- cria, altera, exclui(elimina a estrutura) - em ordem
+- delete pega e joga fora o que tem dentro mantendo a estrutura
+
+create table nome_da_tabela (para criar tabelas)(
+coluna1 tipo [restrição]
+aluno inteiro [primary key]
+
+)
+
+TIPOS DE DADOS E RESTRIÇÕES NOS SLIDES
+
+
+NAO ERRAR NA PROVA 
+COLOCAR A COLUNA QUE EU VOU TRANSFORMAR EM CHAVE ESTRANGEIRA E DEPOIS FOREIGN KEY.
+exemplo:
+codDepto int , -- primeiro cria a tabela que vc tem na outra tabela 
+foreign key(codDepto) references departamento (codDept) -- agora você cria a chave estrangeira
+
+PROVA
+EXEMPLO:
+CREATE TABLE matricula(
+matricula integer,
+codCurso integer,
+dtMatricula date,
+PRIMARY KEY (matricula, codCurso),
+foreign key (matricula) references aluno (matricula),
+foreign key (codCurso) references curso (Codcurso)
+);
+
+
+
+
